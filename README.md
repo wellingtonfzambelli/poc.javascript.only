@@ -1,5 +1,5 @@
 # About
-This project demonstrates the use of pure javascript  ECMAScript 6+ and Vite Compiler
+This project demonstrates the use of pure javascript  ECMAScript 6+ and Vite
 
 # Stacks of this project
 - Javascript
