@@ -30,3 +30,8 @@ cd vite-project
 ```terminal
 npm install
 ```
+
+7 Run the application
+```
+npm run dev
+```
