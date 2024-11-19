@@ -1,5 +1,14 @@
 # About
 This project demonstrates the use of pure javascript  ECMAScript 6+ and Vite
+I'm using some basic javascript concepts such as:     
+- object
+- class
+- import/export    
+- promise
+- fetch
+- map - filter - reduce
+- arrow function
+- async/await
 
 # Stacks of this project
 - Javascript
