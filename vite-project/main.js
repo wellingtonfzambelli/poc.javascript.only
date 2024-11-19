@@ -24,38 +24,50 @@ async function loadCarsFromApi() {
 
   async function updateCarTable() {
     const tableBody = document.querySelector("#table-cars tbody");
-    tableBody.innerHTML = ""; // Limpa o conteúdo existente
+    tableBody.innerHTML = "";
   
     carManager.cars.forEach(car => {
       const row = document.createElement("tr");
       
-      // Cria e adiciona as células da linha
       row.innerHTML = `
         <td>${car.brand}</td>
         <td>${car.model}</td>
         <td>${car.year}</td>
+        <td>${car.status}</td>
       `;
-      tableBody.appendChild(row); // Adiciona a linha na tabela
+      tableBody.appendChild(row);
     });
   }
 
 // Add a new car
 document.querySelector("#addCar").addEventListener("click", async () => {
+    debugger;
   const brand = document.querySelector("#brand").value;
   const model = document.querySelector("#model").value;
   const year = document.querySelector("#year").value;
+  const status = ((year % 2) == 0) ? "sold" : "available";
 
-  carManager.addCar(brand, model, year); // Add car locally
+  carManager.addCar(brand, model, year, status); // Add car locally
   const newCar = carManager.cars[carManager.cars.length - 1];
   
   await saveCar(newCar); // Save car to API
+  clearFields();
+
   console.log("Saved car:", newCar);
 });
 
 // Filter cars by status
 document.querySelector("#filter").addEventListener("change", () => {
   const status = document.querySelector("#filter").value;
-  const filteredCars = carManager.getCarsByStatus(status); // Use Filter
-  console.log(`Filtered cars (${status}):`, filteredCars);
+  carManager.cars = carManager.getCarsByStatus(status); // Use Filter
+  
+  updateCarTable();
+
+  console.log(`Filtered cars (${status}):`, carManager.cars);
 });
 
+function clearFields(){
+    document.querySelector("#brand").value = '';
+    document.querySelector("#model").value = '';
+    document.querySelector("#year").value = '';
+}
