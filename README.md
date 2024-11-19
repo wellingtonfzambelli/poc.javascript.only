@@ -1,7 +1,7 @@
 # About
 This project demonstrates the use of pure javascript  ECMAScript 6+ and Vite
 I'm using some basic javascript concepts such as:     
-- objeto
+- object
 - class
 - import/export    
 - promise
