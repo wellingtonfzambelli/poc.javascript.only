@@ -11,6 +11,8 @@ I'm using some basic javascript concepts such as:
 - async/await
 
 # Stacks of this project
+- HTML
+- CSS
 - Javascript
 - ECMAScript 6+
 - Vite - build tool
