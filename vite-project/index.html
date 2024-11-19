@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Car Management System</title>  
+
+    <link rel="stylesheet" href="./styles/main.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Car Management System</h1>
+    </header>
+    
+    <main>
+      <section>
+        <h2>Add a Car</h2>
+        <div class="form-container">
+          <div class="form-group">
+            <input type="text" id="brand" placeholder="Brand" />
+            <input type="text" id="model" placeholder="Model" />
+            <input type="number" id="year" placeholder="Year" />
+          </div>
+          <button id="addCar">Add Car</button>
+        </div>
+      </section>
+
+      <section>
+        <h2>Filter Cars</h2>
+        <div class="form-group">
+          <label for="filter">Status:</label>
+          <select id="filter">
+            <option value="all">All</option>
+            <option value="available">Available</option>
+            <option value="sold">Sold</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="car-list">
+        <h2>Car List</h2>
+        
+        <table id="table-cars">
+          <thead>
+            <tr align="left">
+              <th style="width: 100px;">Brand</th>
+              <th>Model</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          </tbody>
+        </table>
+      </section>
+    </main>
+    
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
