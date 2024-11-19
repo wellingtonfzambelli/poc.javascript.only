@@ -44,3 +44,6 @@ npm install
 ```
 npm run dev
 ```
+
+# Application
+![image](https://github.com/user-attachments/assets/1691d224-4cf9-4c6f-8714-dc7cde4c1517)
