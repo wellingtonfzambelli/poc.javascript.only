@@ -9,9 +9,7 @@ This project demonstrates the use of pure javascript  ECMAScript 6+ and Vite Com
 - Google Chrome
 
 # Setting up the vite
-1 - Open the terminal -> go to your project directory 
-
-2 - Type the npm command
+1 - Open the terminal -> go to your project directory -> Type the npm command bellow
 
 ```terminal
 npm create vite@latest
