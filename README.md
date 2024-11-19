@@ -14,3 +14,15 @@ This project demonstrates the use of pure javascript  ECMAScript 6+ and Vite Com
 ```terminal
 npm create vite@latest
 ```
+
+2 - type your project name 'vite-project'
+
+3 - Choose the 'Vanilla' option
+
+4 - Choose the 'Javascript' option
+
+5 - run the command bellow
+
+```terminal
+npm install
+```
