@@ -42,7 +42,7 @@ cd vite-project
 npm install
 ```
 
-7 Run the application
+7 - Run the application
 ```
 npm run dev
 ```
